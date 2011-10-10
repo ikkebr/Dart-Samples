@@ -1,4 +1,6 @@
 int howmany(Collection collection, element){
+/* Receives a collection and an element and returns how many times
+this element appears inside the collection. */
 	var i=0;
 	var occurrences = 0;
 	for(i=0; i < collection.length; i++){
@@ -10,6 +12,7 @@ int howmany(Collection collection, element){
 }
 
 int dictsort(e1, e2){
+/* Used to compare two dictionaries with only one element (int, String) */
   if (e1.getKeys()[0] > e2.getKeys()[0]){
     return 1;
   } else if (e1.getKeys()[0] < e2.getKeys()[0]) {
@@ -43,6 +46,7 @@ main() {
 	counter[word] = howmany(words, word);
   }
   
+  // I will use structs next time.
   var ordered_list = new List<Map<int,String>>();
 
   counter.forEach( (word, number) {
