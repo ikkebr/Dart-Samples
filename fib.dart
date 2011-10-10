@@ -1,6 +1,6 @@
 Map<int,int> fibs = {};
 
-int fib(n){
+fib(n){
   if (fibs.containsKey(n)){
     return fibs[n];
   }
@@ -24,8 +24,16 @@ main() {
   assert(fib(3) == (fibs[2]+fibs[1]));
   assert(fib(10) == fib(9)+fib(8));
   
+  int start = Clock.now();
+
+/* 
   for (var i=0; i<10; i++){
 	print(fib(i));
   }
-  
+*/
+  print(fib(1476));
+
+  int end = Clock.now();
+
+  print(end-start);
 }
